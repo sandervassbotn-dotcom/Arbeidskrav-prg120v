@@ -1,4 +1,3 @@
-php
 <?php  /* registrer-klasse */
 /*
    Programmet lager et html-skjema for å registrere en klasse
