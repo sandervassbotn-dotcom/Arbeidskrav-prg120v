@@ -1,2 +1,3 @@
 <?php
-echo "Hei fra PHP!";
+include "db-tilkobling.php";
+echo "Koblet til databasen!";
