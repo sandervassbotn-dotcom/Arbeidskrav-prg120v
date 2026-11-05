@@ -14,3 +14,30 @@
   <input type="submit" value="Registrer klasse" id="registrerKlasseKnapp" name="registrerKlasseKnapp" />
   <input type="reset" value="Nullstill" id="nullstill" name="nullstill" /> <br />
 </form>
+
+<?php
+  if (isset($_POST["registrerKlasseKnapp"]))
+    {
+      $klassekode=$_POST["klassekode"];
+      $klassenavn=$_POST["klassenavn"];
+      $studiumkode=$_POST["studiumkode"];
+
+      include("db-tilkobling.php");  /* tilkobling til database-serveren */
+
+          $sqlSetning="SELECT * FROM klasse WHERE klassekode='$klassekode';";
+          $sqlResultat=mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; hente data fra databasen");
+          $antallRader=mysqli_num_rows($sqlResultat);
+
+          if ($antallRader!=0)  /* klassen er registrert fra før */
+            {
+              print ("Klassen er registrert fra f&oslash;r");
+            }
+          else
+            {
+              $sqlSetning="INSERT INTO klasse VALUES('$klassekode','$klassenavn','$studiumkode');";
+              mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; registrere data i databasen");
+
+              print ("F&oslash;lgende klasse er n&aring; registrert: $klassekode $klassenavn $studiumkode");
+            }
+    }
+?>
