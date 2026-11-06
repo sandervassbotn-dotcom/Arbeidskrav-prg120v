@@ -17,7 +17,7 @@
 <?php
   if (isset($_POST ["slettKlasseKnapp"]))
     {	
-      $klasse=$_POST ["Klasse"];
+      $slettKlasseSkjema=$_POST ["slettKlasseSkjema"];
 
           include("db-tilkobling.php");  /* tilkobling til database-serveren utført og valg av database foretatt */
 
