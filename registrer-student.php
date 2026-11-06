@@ -6,6 +6,9 @@
 ?>
 
 <h3>Registrer student</h3>
+<head>
+  <meta charset="UTF-8">
+</head>
 
 <form method="post" action="" id="registrerStudentSkjema" name="registrerStudentSkjema">
   Brukernavn <input type="text" id="brukernavn" name="brukernavn" required> <br/>
