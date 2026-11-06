@@ -1,3 +1,7 @@
+<head>
+  <meta charset="UTF-8">
+</head>
+
 <?php  /* vis-alle-klasser */
 /*  Programmet skriver ut alle registrerte klasser */
   include("db-tilkobling.php");  /* tilkobling til database-serveren utf�rt og valg av database foretatt */

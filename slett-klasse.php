@@ -7,6 +7,9 @@
 
 
 <h3>Slett klasser</h3>
+<head>
+  <meta charset="UTF-8">
+</head>
 
 <form method="post" action="" id="slettKlasseSkjema" name="slettKlasseSkjema" >
   Klasse <input type="text" id="slettKlasseSkjema" name="slettKlasseSkjema" required /> <br/>
