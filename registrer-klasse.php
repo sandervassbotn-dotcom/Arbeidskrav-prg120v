@@ -24,7 +24,7 @@
 
       if ($klassekode=="" || $klassenavn=="" || $studiumkode=="" || strpos ($klassekode, " ") !== false) 
         {
-          print ("Alle feltene m&aring; fylles ut, og klassekoden kan ikke ha mellomrom");
+          print ("klassekoden kan ikke ha mellomrom");
         }
 
         else
