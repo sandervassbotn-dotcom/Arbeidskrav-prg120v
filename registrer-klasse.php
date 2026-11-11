@@ -1,3 +1,7 @@
+<head>
+  <meta charset="UTF-8">
+</head>
+
 <?php  /* registrer-klasse */
 /*
    Programmet lager et html-skjema for å registrere en klasse
@@ -6,9 +10,7 @@
 ?>
 
 <h3>Registrer klasse</h3>
-<head>
-  <meta charset="UTF-8">
-</head>
+
 
 <form method="post" action="" id="registrerKlasseSkjema" name="registrerKlasseSkjema">
   Klassekode <input type="text" id="klassekode" name="klassekode" required> <br/>
@@ -49,8 +51,9 @@
               mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; registrere data i databasen");
 
               print ("F&oslash;lgende klasse er n&aring; registrert: $klassekode $klassenavn $studiumkode");
+            }
        
-         }
+         
        
         }
       
